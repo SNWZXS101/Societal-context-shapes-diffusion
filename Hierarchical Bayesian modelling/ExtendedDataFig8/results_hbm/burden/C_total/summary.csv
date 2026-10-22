@@ -1,0 +1,27 @@
+param,mean,sd,ci2_5,median,ci97_5
+alpha,-3.99887590674259,NaN,NaN,NaN,NaN
+phi,7.03552968654518,NaN,NaN,NaN,NaN
+taup,0.3,NaN,NaN,NaN,NaN
+tauv,0.3,NaN,NaN,NaN,NaN
+beta:age65 share,-0.102771886657523,NaN,NaN,NaN,NaN
+beta:education share,-0.0164834118242397,NaN,NaN,NaN,NaN
+beta:gdp_{pc},0.0377623926972894,NaN,NaN,NaN,NaN
+beta:hospital beds per 1k,0.00487308217773318,NaN,NaN,NaN,NaN
+beta:proportion of students,-0.165290069273344,NaN,NaN,NaN,NaN
+beta:inbound overnight visitors,0.0262318109244317,NaN,NaN,NaN,NaN
+beta:disposable income_{pc},-0.110081236507811,NaN,NaN,NaN,NaN
+beta:passenger volume,0.0273344482724984,NaN,NaN,NaN,NaN
+beta:public transit volume,-0.0595456897285988,NaN,NaN,NaN,NaN
+beta:tertiary-sector share,-0.0126875406724124,NaN,NaN,NaN,NaN
+beta:urban population density,0.00829477012968834,NaN,NaN,NaN,NaN
+beta:urban rate,0.0785105127677568,NaN,NaN,NaN,NaN
+beta:region North,0,NaN,NaN,NaN,NaN
+beta:region Northeast,0,NaN,NaN,NaN,NaN
+beta:region Central,0,NaN,NaN,NaN,NaN
+beta:region South,0,NaN,NaN,NaN,NaN
+beta:region Southwest,0,NaN,NaN,NaN,NaN
+beta:region Northwest,0,NaN,NaN,NaN,NaN
+beta:climate Subtropical,0.0727176455278319,NaN,NaN,NaN,NaN
+beta:climate Tropic,0.500015603554917,NaN,NaN,NaN,NaN
+beta:climate Plateau,0.128930399238861,NaN,NaN,NaN,NaN
+beta:climate Arid,0.162544180910376,NaN,NaN,NaN,NaN

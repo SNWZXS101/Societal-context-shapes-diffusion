@@ -1,0 +1,200 @@
+{
+  "name_map": [
+    {
+      "original": "age65 share",
+      "safe": "age65_share"
+    },
+    {
+      "original": "climate zone",
+      "safe": "climate_zone"
+    },
+    {
+      "original": "education share",
+      "safe": "education_share"
+    },
+    {
+      "original": "gdp_{pc}",
+      "safe": "gdp_pc"
+    },
+    {
+      "original": "hospital beds per 1k",
+      "safe": "hospital_beds_per_1k"
+    },
+    {
+      "original": "proportion of students",
+      "safe": "proportion_of_students"
+    },
+    {
+      "original": "inbound overnight visitors",
+      "safe": "inbound_overnight_visitors"
+    },
+    {
+      "original": "disposable income_{pc}",
+      "safe": "disposable_income_pc"
+    },
+    {
+      "original": "passenger volume",
+      "safe": "passenger_volume"
+    },
+    {
+      "original": "public transit volume",
+      "safe": "public_transit_volume"
+    },
+    {
+      "original": "region category",
+      "safe": "region_category"
+    },
+    {
+      "original": "tertiary-sector share",
+      "safe": "tertiarysector_share"
+    },
+    {
+      "original": "urban population density",
+      "safe": "urban_population_density"
+    },
+    {
+      "original": "urban rate",
+      "safe": "urban_rate"
+    }
+  ],
+  "transform_stats": {
+    "age65_share": {
+      "transform": "identity",
+      "mean": 0.12288829399912066,
+      "sd": 0.0235608733631244,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "education_share": {
+      "transform": "identity",
+      "mean": 0.33679572544324665,
+      "sd": 0.097399357944403686,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "log_gdp_pc": {
+      "transform": "log"
+    },
+    "gdp_pc": {
+      "mean": 11.058537073753381,
+      "sd": 0.401504320063136,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "log_hospital_beds_per_1k": {
+      "transform": "log"
+    },
+    "hospital_beds_per_1k": {
+      "mean": 1.8227334113645806,
+      "sd": 0.13657381047582878,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "proportion_of_students": {
+      "transform": "identity",
+      "mean": 0.19277023809523813,
+      "sd": 0.042197039595933065,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "log_inbound_overnight_visitors": {
+      "transform": "log"
+    },
+    "inbound_overnight_visitors": {
+      "mean": 5.3857760536196908,
+      "sd": 1.2156337369628325,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "log_disposable_income_pc": {
+      "transform": "log"
+    },
+    "disposable_income_pc": {
+      "mean": 10.294951664387218,
+      "sd": 0.31364447960120734,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "log_passenger_volume": {
+      "transform": "log"
+    },
+    "passenger_volume": {
+      "mean": 10.739588694245816,
+      "sd": 0.73619210508145294,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "log_public_transit_volume": {
+      "transform": "log"
+    },
+    "public_transit_volume": {
+      "mean": 12.354697048881697,
+      "sd": 0.73905834974709661,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "tertiarysector_share": {
+      "transform": "identity",
+      "mean": 0.5372809523809523,
+      "sd": 0.075574495831207927,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "log_urban_population_density": {
+      "transform": "log"
+    },
+    "urban_population_density": {
+      "mean": 7.9471641652607579,
+      "sd": 0.39299013936382443,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    },
+    "urban_rate": {
+      "transform": "identity",
+      "mean": 0.61997095238095257,
+      "sd": 0.1039065326406594,
+      "imputed_to_zero": true,
+      "missing_rate": 0
+    }
+  },
+  "region_levels": [
+    "North",
+    "Northeast",
+    "East",
+    "Central",
+    "South",
+    "Southwest",
+    "Northwest"
+  ],
+  "region_ref": "East",
+  "climate_levels": [
+    "Temperate",
+    "Subtropical",
+    "Tropic",
+    "Plateau",
+    "Arid"
+  ],
+  "climate_ref": "Temperate",
+  "targets": [
+    "delta_early",
+    "kappa_cross",
+    "rho_eps",
+    "tf1_mean_early",
+    "tf2_peak",
+    "t_tf2_peak"
+  ],
+  "target_tf": {
+    "delta_early": "log",
+    "kappa_cross": "abslog",
+    "rho_eps": "log",
+    "tf1_mean_early": "log",
+    "tf2_peak": "log",
+    "t_tf2_peak": "log"
+  },
+  "row_drop": {
+    "n_drop": 0,
+    "targets": "delta_early"
+  },
+  "impute_cont_to_mean": true,
+  "note": "连续固定效应已标准化；缺失值按均值插补（z=0）；部分连续列先对数；目标变量按 target_tf 变换；hard_drop_nonpos_targets 对应的非正行已整行删除。"
+}
